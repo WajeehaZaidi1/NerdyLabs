@@ -11,7 +11,7 @@ const ConnectSection = () => {
         </h2>
         <p className="text-lg mb-8">
           Our nerds are excited to collaborate with you. Reach out and let's
-          build something amazing together!
+          build something amazing together!!
         </p>
         <Link
           to="/contact"
