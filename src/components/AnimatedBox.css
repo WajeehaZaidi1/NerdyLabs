@@ -1,0 +1,52 @@
+.animated-box {
+    aspect-ratio: 1 / 1;
+    background-blend-mode: overlay;
+    backdrop-filter: blur(8px);
+    transform: scale(1);
+    transition: transform 0.3s ease, background-size 0.5s ease, background-position 0.5s ease;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 40%;
+  }
+  
+  .animated-box:hover {
+    transform: scale(1.05);
+    background-size: 55%; /* zoom the background image */
+     /* shift image to the left */
+  }
+  .box-bg-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    height: auto;
+    opacity: 0.5;
+    z-index: 0;
+    transform: rotate(0deg) scale(1);
+    transition: transform 0.5s ease, opacity 0.3s ease;
+    pointer-events: none;
+  }
+  
+  .animated-box:hover .box-bg-image {
+    transform: rotate(-20deg) scale(1.2) translateX(-9%);
+    opacity: 0.5;
+  }
+  
+  
+  .explore-button {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    backdrop-filter: blur(4px);
+    transition: all 0.3s ease;
+    opacity: 0;
+  }
+  
+  .explore-button:hover {
+    background: white;
+    color: black;
+  }
+  
+  .background-overlay {
+    transition: background-color 0.3s ease;
+  }
+  
